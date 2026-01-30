@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e8f2fb;
+  --color-secondary: #202322;
+  --color-tertiary: #0972ce;
+  --color-quaternary: #8c8b89;
+}
+
+body {
+  color: var(--color-secondary);
+}
+
+.section-heading {
+  @apply text-xl font-semibold my-6;
+}
