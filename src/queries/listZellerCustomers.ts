@@ -2,7 +2,7 @@ const LIST_ZELLER_CUSTOMERS = `query ListZellerCustomers {
   listZellerCustomers {
     items {
       email
-      ids
+      id
       name
       role
     }

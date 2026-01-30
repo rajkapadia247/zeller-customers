@@ -5,6 +5,12 @@
   --color-secondary: #202322;
   --color-tertiary: #0972ce;
   --color-quaternary: #8c8b89;
+  --color-surface: #dee2e6;
+}
+
+html,
+body {
+  min-height: 100%;
 }
 
 body {

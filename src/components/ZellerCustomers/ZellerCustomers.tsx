@@ -6,6 +6,7 @@ import { DEFAULT_ROLE } from "../../constants";
 import UsersList from "../UsersList/UsersList";
 import RoleSelector from "../RoleSelector/RoleSelector";
 import PageSkeletonLoader from "../PageSkeletonLoader/PageSkeletonLoader";
+import ErrorContainer from "../ErrorContainer/ErrorContainer";
 
 const ZellerCustomers = () => {
   const { data, loading, error, refetch } = useQuery<ListZellerCustomersResponse>(LIST_ZELLER_CUSTOMERS);
@@ -19,14 +20,7 @@ const ZellerCustomers = () => {
   }
 
   if (error) {
-    return (
-      <div role="alert" className="py-4">
-        <p className="text-quaternary mb-3">Failed to load customers.</p>
-        <button type="button" onClick={() => refetch()} className="px-3 py-2 bg-primary text-tertiary rounded-md font-medium">
-          Try again
-        </button>
-      </div>
-    );
+    return <ErrorContainer handleRetry={refetch} />;
   }
 
   return (
