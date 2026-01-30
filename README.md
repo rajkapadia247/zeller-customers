@@ -1,6 +1,6 @@
 # Zeller Customers
 
-A React app that lists Zeller customers by role. 
+A React app that lists Zeller customers by role. WCAG 2.1 AA standards compliant and 100% unit test coverage. 
 
 ## Tech stack
 
@@ -41,6 +41,11 @@ A React app that lists Zeller customers by role.
 - **Error**: Error message and “Try again” button with refetch on failure.
 
 ## Screenshots
+Accessibility Check - No issues:
+
+<img width="604" height="346" alt="image" src="https://github.com/user-attachments/assets/ab0a605d-91a3-497e-b93b-1a415055fc3a" />
+
+
 Success State:
 
 <img width="604" height="346" alt="image" src="https://github.com/user-attachments/assets/088f66b9-253b-431a-9d01-635ca48b8517" />
